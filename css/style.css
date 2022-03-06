@@ -1,0 +1,80 @@
+/*Global*/
+
+.icon {
+    height: 30px;
+    width: 25%;
+    border: 1px solid black;
+}
+
+button {
+    height: 30px;
+}
+
+/*Left Nav*/
+.nav-header {
+    padding: 0.5rem 1rem;
+}
+
+.nav-link {
+    border: 1px solid black;
+}
+
+.spacer-nav {
+    height: 33vh;
+}
+
+/*Center Content*/
+
+.course-overview {
+    margin: 0px;
+}
+
+.class-card {
+    height: 154px;
+    border: 1px solid black;
+    margin-right: 2px;
+}
+
+.class-card + .class-card {
+    margin-top: 4px;
+}
+
+.status-card {
+    height: 235px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.progress-card {
+    height: 264px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.btn-join {
+    width: 94px;
+}
+
+/*Right Sidebar*/
+
+
+.cal-bar {
+    border: 1px solid black;
+}
+
+.calendar {
+    border: 1px solid black;
+    height: 279px;
+}
+.deadline {
+    height: 85px;
+    border: 1px solid black;
+}
+
+/*Media Queries*/
+
+@media (max-width: 768px) {
+    .right-sidebar {
+        display: none;
+    }
+}
