@@ -1,4 +1,8 @@
 /*Global*/
+.container-fluid {
+    padding: 0 20px;
+    margin-top: 16px;
+}
 
 .icon {
     height: 30px;
@@ -10,7 +14,27 @@ button {
     height: 30px;
 }
 
+/*Mobile Nav*/
+.mobile-nav {
+    padding: 8px 0px;
+}
+.nav-subhead {
+    border: 1px solid black;
+    padding: 8px 0;
+}
+
+.nav-subhead p {
+    margin-bottom: -8px;
+    line-height: 1.5;
+    padding-bottom: 8px;
+}
+
+.nav-item {
+    text-align: center;
+}
+
 /*Left Nav*/
+
 .nav-header {
     padding: 0.5rem 1rem;
 }
@@ -20,19 +44,23 @@ button {
 }
 
 .spacer-nav {
-    height: 33vh;
+    height: 38.5vh;
 }
 
 /*Center Content*/
 
+.main-content {
+    padding: 4px;
+}
+
 .course-overview {
     margin: 0px;
+    padding: 0px !important;
 }
 
 .class-card {
     height: 154px;
     border: 1px solid black;
-    margin-right: 2px;
 }
 
 .class-card + .class-card {
@@ -42,7 +70,10 @@ button {
 .status-card {
     height: 235px;
     border: 1px solid black;
-    text-align: center;
+}
+
+.prog-cards {
+    padding: 0 14px;
 }
 
 .progress-card {
@@ -51,30 +82,62 @@ button {
     text-align: center;
 }
 
+.readiness-card {
+    height: 264px;
+    border: 1px solid black;
+}
+
 .btn-join {
     width: 94px;
 }
 
 /*Right Sidebar*/
+.col-icon {
+    width: 48px;
+}
 
+.icon {
+    width: 48px;
+}
 
 .cal-bar {
+    position: relative;
     border: 1px solid black;
+    justify-content: space-between;
+}
+
+.btn-group {
+    right: 0;
+    top: 5px;
 }
 
 .calendar {
     border: 1px solid black;
     height: 279px;
 }
-.deadline {
+
+.task-item {
     height: 85px;
     border: 1px solid black;
 }
 
+.task-item + .task-item {
+    margin-top: 4px;
+}
+
+.event-item {
+    height: 34px;
+    border: 1px solid black;
+}
 /*Media Queries*/
 
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}
 @media (max-width: 768px) {
-    .right-sidebar {
+    .right-sidebar, .side-nav {
         display: none;
     }
 }
