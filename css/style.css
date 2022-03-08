@@ -113,7 +113,30 @@ button {
 
 .calendar {
     border: 1px solid black;
-    height: 279px;
+    max-height: 279px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.table {
+    max-width: none;
+    table-layout: fixed;
+    word-wrap: none;
+}
+
+th {
+    font: 12px 600 Hevletica;
+    text-align: center;
+}
+
+td {
+    font: 10px Hevletica;
 }
 
 .task-item {
