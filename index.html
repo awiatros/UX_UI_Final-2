@@ -68,10 +68,10 @@
         <!--Side Nav-->
         <div class="col-lg-2 col-md-2 h-100 side-nav">
           <nav class="navbar pl-0">
-            <a class="navbar-brand" href="#">
+            <div class="navbar-brand pl-0 ml-0">
               <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
               The Depot
-            </a>
+            </div>
           </nav>
           <div class="nav-set">
             <div class="row nav-link">
@@ -178,14 +178,14 @@
             </div>
           </div>
           <div class="row cal-bar">
-            <p class="ml-1 mb-auto mt-auto">Calendar</p>
-            <div class="btn-group mr-1 mb-2" role="group">
-              <button class="btn-sm">Week</button>
-              <button class="btn-sm">Month</button>
+            <p class="ml-1 mb-2 mt-2">Calendar</p>
+            <div class="btn-group btn-group-sm mr-1 pb-0" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-week">Week</button>
+              <button type="button" class="btn btn-month">Month</button>
             </div>
           </div>
-          <div class="row calendar">
-            <p class="ml-auto mr-auto mb-1 mt-1 pb-1">March 2022</p>
+          <div class="row calendar cal-month">
+            <p class="ml-auto mr-auto mb-2 mt-2 pb-1">March 2022</p>
             <table class="table table-bordered mb-0">
               <thead>
                 <tr>
@@ -245,6 +245,32 @@
                   <td class="p-1 pb-3">2</td>
                 </tr>
               </tbody>
+            </table>
+          </div>
+          <div class="row calendar cal-week">
+            <p class="ml-auto mr-auto mb-1 mt-1 pb-1">March 2022</p>
+            <table class="table table-bordered mb-0">
+              <thead>
+                <tr>
+                  <th scope="col" class="p-1">U</th>
+                  <th scope="col" class="p-1">M</th>
+                  <th scope="col" class="p-1">T</th>
+                  <th scope="col" class="p-1">W</th>
+                  <th scope="col" class="p-1">R</th>
+                  <th scope="col" class="p-1">F</th>
+                  <th scope="col" class="p-1">S</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row" class="p-1 pb-3">13</th>
+                  <td class="p-1 pb-3">14</td>
+                  <td class="p-1 pb-3">15</td>
+                  <td class="p-1">16<br></td>
+                  <td class="p-1 pb-3">17</td>
+                  <td class="p-1 pb-3">18</td>
+                  <td class="p-1">19<br></td>
+                </tr>
             </table>
           </div>
           <div class="row events">

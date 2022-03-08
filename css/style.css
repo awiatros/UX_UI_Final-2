@@ -135,6 +135,10 @@ th {
     text-align: center;
 }
 
+.hide-cal {
+    display: none;
+}
+
 td {
     font: 10px Hevletica;
 }
