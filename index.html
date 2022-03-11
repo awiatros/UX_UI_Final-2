@@ -1,291 +1,370 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>The Depot | Dashboard</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div class="container-fluid">
-    <!--Mobile Nav-->      
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mobile-nav">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div>
-        <a class="navbar-brand" href="#">
-          <img src="images/Logo.png" width=auto height="40" class="d-inline-block align-top" alt="">
-        </a>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>The Depot | Dashboard</title>
+</head>
+
+<body>
+  <!--Mobile Nav-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mobile-nav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div>
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.svg" width=auto height="40" class="d-inline-block align-top" alt="">
+      </a>
+    </div>
+    <div>
+      <button>Alert</button>
+      <button>Profile</button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Homework</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Career Services</a>
+        </li>
+        <li class="nav-item nav-subhead">
+          <p>Linked Tools</p>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Messaging</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Figma</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trello</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Main-->
+  <div class="row dash-main">
+    <!--Side Nav-->
+    <div class="col-lg-2 col-md-2 d-block h-100 side-nav">
+      <nav class="navbar pl-0">
+        <div class="navbar-brand pl-0 mx-auto my-2">
+          <img src="images/logo.svg" width=120 class="d-inline-block align-top" alt="The Depot">
+        </div>
+      </nav>
+      <div class="nav-set">
+        <div class="row nav-link current-page d-flex">
+          <div class="nav-tag"></div>
+          <a class="sidebar-link dash-bar ml-3" href="#"><img src="images/dash-icon.svg"
+              alt="blue circle with house icon" class="side-icon pr-3">Dashboard</a>
+        </div>
+        <div class="row nav-link ml-4">
+          <a class="sidebar-link" href="#"><img src="images/cal-icon.svg" alt="red circle with calendar icon"
+              class="side-icon pr-3">Calendar</a>
+        </div>
+        <div class="row nav-link ml-4">
+          <a class="sidebar-link" href="#"><img src="images/homework.svg" alt="yellow circle with paper icon"
+              class="side-icon pr-3">Homework</a>
+        </div>
+        <div class="row nav-link ml-4">
+          <a class="sidebar-link" href="#"><img src="images/resources.svg" alt="orange circle with folder icon"
+              class="side-icon pr-3">Resources</a>
+        </div>
+        <div class="row nav-link ml-4">
+          <a class="sidebar-link" href="#"><img src="images/career.svg" alt="globe icon" class="side-icon pr-3">Career
+            Services</a>
+        </div>
+        <div class="spacer-nav"></div>
       </div>
-      <div>
-        <button>Alert</button>
-        <button>Profile</button>
+      <div class="toolkit">
+        <div class="row nav-header pl-5">
+          <p class="body sidebar-link"><img src="images/tools.svg" alt="purple circle arrow pointing down at rectangle"
+              class="side-icon pr-3">Linked Tools</p>
+        </div>
+        <div class="row nav-link pl-5">
+          <a class="sidebar-tool" href="#">Messaging</a>
+        </div>
+        <div class="row nav-link pl-5">
+          <a class="sidebar-tool" href="#">Figma</a>
+        </div>
+        <div class="row nav-link pl-5">
+          <a class="sidebar-tool" href="#">Trello</a>
+        </div>
+        <div class="row nav-link pl-5">
+          <a class="sidebar-link" href="#">+Add</a>
+        </div>
+        <div class="row py-3">
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Calendar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Homework</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Career Services</a>
-          </li>
-          <li class="nav-item nav-subhead">
-            <p>Linked Tools</p>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Messaging</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Figma</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Trello</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Add</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!--Main-->
-      <div class="row">
-        <!--Side Nav-->
-        <div class="col-lg-2 col-md-2 h-100 side-nav">
-          <nav class="navbar pl-0"> 
-            <div class="navbar-brand pl-0 ml-0">
-              <img src="images/Logo.png" width=120  class="d-inline-block align-top" alt="The Depot">
+    </div>
+    <!--Center Content-->
+    <div class="col-lg-7 col-md-7 h-100 main-content">
+      <p class="page-title mt-4 mb-4 ml-4">Dashboard</p>
+      <!--Class Card-->
+      <div class="row course-overview ml-4 mb-3 mr-4 pt-auto pb-auto">
+        <div class="col-12 card class-card pl-3">
+          <div class="row">
+            <div class="col-1 mb-2 d-flex">
+              <img src="images/chev-left.svg" alt="chevron pointing left" class="card-arrow my-auto py-auto">
             </div>
-          </nav>
-          <div class="nav-set">
-            <div class="row nav-link">
-              <a href="#">Dashboard</a>
+            <div class="col-5">
+              <p class="px-3 body card-title">Upcoming Class: Session 21.1</p>
+              <p class="px-3 body card-subtitle">Code Responsive Design Elements</p>
             </div>
-            <div class="row nav-link">
-              <a href="#">Calendar</a>
+            <div class="col-6 d-flex">
+              <img src="images/chev-right.svg" alt="chevron pointing right" class="card-arrow my-auto py-auto">
             </div>
-            <div class="row nav-link">
-              <a href="#">Homework</a>
-            </div>
-            <div class="row nav-link">
-              <a href="#">Resources</a>
-            </div>
-            <div class="row nav-link">
-              <a href="#">Career Services</a>
+            <p class="px-3 body-sm mt-2 session-body">Unit 21 focuses on the process of prototyping, testing, and
+              iterating. You have proven over the past few weeks that you can build webpages, but there's more to
+              front-end development than coding. To practice iteration, some of this week's activities will build on
+              each other. These activities represent iterations on a single prototype.</p>
           </div>
-          <div class="spacer-nav"></div>
-          </div>
-          <div class="toolkit">
-            <div class="row nav-header">
-              <p class="body">Tools</p>
-            </div>
-            <div class="row nav-link">
-              <a href="#">Messaging</a>
-            </div>
-            <div class="row nav-link">
-              <a href="#">Figma</a>
-            </div>
-            <div class="row nav-link">
-              <a href="#">Trello</a>
-            </div>
-            <div class="row nav-link">
-              <a href="#">Add</a>
+          <hr>
+          <div class="links-buttons d-flex justify-content-between pr-3">
+            <span class="px-3 mr-4 body">Monday July 19, 2022 • 6:30 PM - 9:30 PM</span>
+            <div class="class-btns">
+              <button class="btn-resources font-weight-bold mr-1 pr-2 py-1">Recommended Resources</button>
+              <button class="btn-join text-white font-weight-bold ml-1 px-2 py-1">Join Class</button>
             </div>
           </div>
         </div>
-        <!--Center Content-->
-        <div class="col-lg-7 col-md-7 h-100 main-content">
-          <h1 class="mt-3 mb-4 ml-4">Dashboard</h1>
-          <!--Class Card-->
-          <div class="row course-overview ml-4 mb-3 mr-4 mt-3 pt-auto pb-auto">
-            <div class="col-12 card class-card">
-              <p class="px body">Upcoming Class: Session 21.1</p>
-              <p class="px body">Code Responsive Design Elements</p>
-              <p class="px body-sm">Unit 21 focuses on the process of prototyping, testing, and iterating. You have proven over the past few weeks that you can build webpages, but there's more to front-end development than coding. To practice iteration, some of this week's activities will build on each other. These activities represent iterations on a single prototype.</p>
-              <hr>
-              <div class="links-buttons">
-                <span class="px-3 mr-4 body">Monday July 19, 2022 • 6:30 PM - 9:30 PM</span>
-                <button class="btn-resources font-weight-bold mr-1 px-2 py-1">Recommended Resources</button>
-                <button class="btn-join text-white font-weight-bold ml-1 px-2 py-1">Join Class</button>
-              </div>
-            </div>
+      </div>
+      <!--Resume, Grades, Absence Cards-->
+      <div class="row course-status ml-4 mb-3 mr-4">
+        <div class="col continue-card card p-3 mr-2">
+          <div class="row">
+            <img src="images/top-left-card.png" class="intro-figma">
           </div>
-          <!--Resume, Grades, Absence Cards-->
-          <div class="row course-status ml-4 mb-3 mr-4"> 
-            <div class="col status-card card p-3 mr-2">
-              <p class="ml-auto mr-auto body">Pick Up Where You Left Off:</p>
-              <p class="body">Video Library Session 2.2</p>
-            </div>
-            <div class="col ml-2">
-              <div class="row">
-                <div class="col status-card card mr-2 p-3">
-                  <p class="body">Academic Average</p>
-                  <img class="grade mx-auto" src="images/A.png" alt="green capital letter A">
-                  <button class="btn-grades resources font-weight-bold mx-auto px-3">Review Grades</button>
-                </div>
-                <div class="col status-card card ml-2 p-3">
-                  <p class="body">Remaining Absences</p>
-                  <img class="attendance mx-auto" src="images/attendance.png" alt="circle enclosed in semi-circle with text '3/4 absences'">
-                  <button class="btn-attendance resources font-weight-bold mx-auto px-3">Manage Attendance</button>
-                </div>
-              </div>
-            </div>
+          <div class="row vid-bar">
+            <div class="col-6 vid-grn"></div>
+            <div class="col-6 vid-blk"></div>
           </div>
-          <!--Progress Cards-->
-          <div class="row prog-cards p-3 ml-4 mb-3 mr-4 mt-3">
-            <div class="col mr-2 card progress-card">
-              <p class="body">Course Progress</p>
-            </div>
-            <div class="col ml-2 card progress-card">
-              <p class="body">Career Readiness</p>
-            </div>
+          <p class="pt-3 mb-0mx-0 body card-title">Pick Up Where You Left Off</p>
+          <div class="row d-flex justify-content-between">
+            <p class="px-3 body my-auto">Video Library - Session 2.2</p>
+            <input type="checkbox" class="icon flag mr-3 mb-5">
           </div>
         </div>
-        <!--Right Sidebar-->
-        <div class="col-lg-3 col-md-3 right-sidebar">
-          <div class="row right-icons">
-            <div class="col col-icon">
-              <img class="icon">
+        <div class="col ml-2">
+          <div class="row">
+            <div class="col status-card card mr-2 p-3 d-flex flex-col justify-content-between">
+              <p class="body text-center card-title">Academic Average</p>
+              <img class="grade mx-auto px-3 py-5 my-2" src="images/a.svg" alt="green capital letter A">
+              <button class="btn-grades resources font-weight-bold mx-auto px-3">Review Grades</button>
             </div>
-            <div class="col col-icon">
-              <img class="icon">
-            </div>
-            <div class="col col-icon">
-              <img class="icon">
-            </div>
-          </div>
-          <div class="row cal-bar">
-            <p class="ml-1 mb-2 mt-2 body">Calendar</p>
-            <div class="btn-group btn-group-sm mr-1 pb-0" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-week">Week</button>
-              <button type="button" class="btn btn-month">Month</button>
+            <div class="col p-3 status-card card ml-2 d-flex flex-col justify-content-between">
+              <p class="body text-center card-title">Remaining Absences</p>
+              <img class="attendance mx-auto" src="images/attendance.svg"
+                alt="circle enclosed in semi-circle with text '3/4 absences'">
+              <button class="btn-attendance resources font-weight-bold mx-auto px-3">Manage Attendance</button>
             </div>
           </div>
-          <div class="row calendar cal-month">
-            <p class="ml-auto mr-auto mb-2 mt-2 pb-1 body">March 2022</p>
-            <table class="table table-bordered mb-0">
-              <thead>
-                <tr>
-                  <th scope="col" class="p-1">U</th>
-                  <th scope="col" class="p-1">M</th>
-                  <th scope="col" class="p-1">T</th>
-                  <th scope="col" class="p-1">W</th>
-                  <th scope="col" class="p-1">R</th>
-                  <th scope="col" class="p-1">F</th>
-                  <th scope="col" class="p-1">S</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row" class="p-1 pb-3">27</th>
-                  <td class="p-1 pb-3">28</td>
-                  <td class="p-1 pb-3">1</td>
-                  <td class="p-1">2<br><span class="dot"></span></td>
-                  <td class="p-1 pb-3">3</td>
-                  <td class="p-1 pb-3">4</td>
-                  <td class="p-1">5<br><span class="dot"></span></td>
-                </tr>
-                <tr>
-                  <td scope="row" class="p-1 pb-3">6</th>
-                  <td class="p-1">7<br><span class="dot"></span></td>
-                  <td class="p-1 pb-3">8</td>
-                  <td class="p-1">9<br><span class="dot"></span></td>
-                  <td class="p-1 pb-3">10</td>
-                  <td class="p-1 pb-3">11</td>
-                  <td class="p-1">12<br><span class="dot"></span></td>
-                </tr>
-                <tr>
-                  <td scope="row" class="p-1">13</th>
-                  <td class="p-1">14<br><span class="dot"></span></td>
-                  <td class="p-1">15</td>
-                  <td class="p-1 pb-3">16</td>
-                  <td class="p-1 pb-3">17</td>
-                  <td class="p-1 pb-3">18</td>
-                  <td class="p-1 pb-3">19</td>
-                </tr>
-                <tr>
-                  <td scope="row" class="p-1 pb-3">20</th>
-                  <td class="p-1 pb-3">21</td>
-                  <td class="p-1 pb-3">22</td>
-                  <td class="p-1 pb-3">23</td>
-                  <td class="p-1 pb-3">24</td>
-                  <td class="p-1 pb-3">25</td>
-                  <td class="p-1 pb-3">26</td>
-                </tr>
-                <tr>
-                  <td scope="row pb-3" class="p-1">27</th>
-                  <td class="p-1 pb-3">28</td>
-                  <td class="p-1 pb-3">29</td>
-                  <td class="p-1 pb-3">30</td>
-                  <td class="p-1 pb-3">31</td>
-                  <td class="p-1 pb-3">1</td>
-                  <td class="p-1 pb-3">2</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="row calendar cal-week">
-            <p class="ml-auto mr-auto mb-1 mt-1 pb-1 body">March 2022</p>
-            <table class="table table-bordered mb-0">
-              <thead>
-                <tr>
-                  <th scope="col" class="p-1">U</th>
-                  <th scope="col" class="p-1">M</th>
-                  <th scope="col" class="p-1">T</th>
-                  <th scope="col" class="p-1">W</th>
-                  <th scope="col" class="p-1">R</th>
-                  <th scope="col" class="p-1">F</th>
-                  <th scope="col" class="p-1">S</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row" class="p-1 pb-3">13</th>
-                  <td class="p-1 pb-3">14</td>
-                  <td class="p-1 pb-3">15</td>
-                  <td class="p-1">16<br></td>
-                  <td class="p-1 pb-3">17</td>
-                  <td class="p-1 pb-3">18</td>
-                  <td class="p-1">19<br></td>
-                </tr>
-            </table>
-          </div>
-          <div class="row events">
-            <div class="col-6 cal-events">
-              <div class="row event-item"></div>
-              <div class="row event-item"></div>
-            </div>
-            <div class="col-6 cal-events">
-              <div class="row event-item"></div>
-              <div class="row event-item"></div>
-            </div>
-          </div>
-          <p class="pt-3 body">Tasks</p>
-          <div class="row task-item"></div>
-          <div class="row task-item"></div>
-          <div class="row task-item"></div>
         </div>
       </div>
+      <!--Progress Cards-->
+      <div class="row course-status ml-4 mb-3 mr-4">
+        <div class="col saved-card card p-3 mr-2 d-flex flex-col justify-content-between">
+          <div class="row">
+            <img src="images/bottom-left-card.png" class="intro-figma">
+          </div>
+          <p class="mt-3 mb-0 mx-0 body card-title">Recently Saved</p>
+          <div class="row d-flex justify-content-between">
+            <p class="px-3 body my-auto">Intro to Figma</p>
+            <input type="checkbox" class="icon flag mr-3 mb-5">
+          </div>
+        </div>
+        <div class="col ml-2">
+          <div class="row">
+            <div class="col status-card card mr-2 p-3 d-flex flex-col justify-content-between">
+              <p class="body text-center card-title career-title">Career Readiness</p>
+              <img class="readiness ml-5" src="images/readiness.svg"
+                alt="Letter B inside one solid ring and two yellow semi-circles with text 'complete'">
+              <button class="btn-milestones resources font-weight-bold mx-auto px-3 mb-2">See Milestones</button>
+            </div>
+            <div class="col status-card card ml-2 p-3 d-flex flex-col justify-content-between">
+              <p class="body text-center card-title">Skills Assessment</p>
+              <p class="body-sm text-center px-3 py-5">Discover suggested resources tailored to you, based on the
+                results of your skills assessment.</p>
+              <button class="btn-assessment resources font-weight-bold mx-auto px-3 mb-2">Manage Assessment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Right Sidebar-->
+    <div class="col-lg-3 col-md-3 right-sidebar px-4">
+      <div class="row right-icons mb-5 mt-4 mr-3 d-flex justify-content-between">
+        <img src="images/alert.svg" class="icon py-auto my-auto pr-4 ml-4 mr-4" alt="bell with red dot in top right">
+        <img src="images/profile.png" class="profile py-auto my-auto" alt="round image of smiling woman">
+        <p class="cal-subhead py-auto my-auto">Joan Gingham</p>
+        <img src="images/chev-down.svg" class="icon-sm chev-down py-auto my-auto mr-4" alt="downard-pointing chevron">
+      </div>
+      <div class="row calendar cal-month d-flex justify-content-between" id="cal-a">
+        <div class="d-flex">
+          <p class="ml-4 mb-2 right-subhead">March 2022</p>
+          <img src="images/chev-right.svg" class="side-icon icon-chev mb-3 pl-4" alt="right-facing chevron">
+        </div>
+        <img src="images/plus.svg" class="icon mr-5" alt="whie plus sign in blue square">
+        <table class="table table-borderless mb-5 mx-5">
+          <thead>
+            <tr>
+              <td scope="col" class="pb-3 wkday">Sun</th>
+              <td scope="col" class="pb-3 wkday">Mon</th>
+              <td scope="col" class="pb-3 wkday">Tue</th>
+              <td scope="col" class="pb-3 wkday">Wed</th>
+              <td scope="col" class="pb-3 wkday">Thu</th>
+              <td scope="col" class="pb-3 wkday">Fri</th>
+              <td scope="col" class="pb-3 wkday">Sat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" class="not-march">27</th>
+              <td class="not-march">28</td>
+              <td class="march">1</td>
+              <td class="march">2<br></td>
+              <td class="march">3</td>
+              <td class="march">4</td>
+              <td class="march">5<br></td>
+            </tr>
+            <tr>
+              <td scope="row" class="march">6</th>
+              <td class="march">7<br></td>
+              <td class="march">8</td>
+              <td class="march">9<br></td>
+              <td class="march">10</td>
+              <td class="march">11</td>
+              <td class="march">12<br></td>
+            </tr>
+            <tr>
+              <td scope="row" class="march">13</th>
+              <td class="mx-auto d-flex justify-content-center p-1 this-day">
+                <div class="march-14 ml-1">14</div>
+              </td>
+              <td class="march">15</td>
+              <td class="march">16</td>
+              <td class="march">17</td>
+              <td class="march">18</td>
+              <td class="march">19</td>
+            </tr>
+            <tr>
+              <td scope="row" class="march">20</th>
+              <td class="march">21</td>
+              <td class="march">22</td>
+              <td class="march">23</td>
+              <td class="march">24</td>
+              <td class="march">25</td>
+              <td class="march">26</td>
+            </tr>
+            <tr>
+              <td scope="row" class="march">27</th>
+              <td class="march">28</td>
+              <td class="march">29</td>
+              <td class="march">30</td>
+              <td class="march">31</td>
+              <td class="not-march">1</td>
+              <td class="not-march">2</td>
+            </tr>
+            <tr>
+              <td scope="row" class="not-march">3</th>
+              <td class="not-march">4</td>
+              <td class="not-march">5</td>
+              <td class="not-march">6</td>
+              <td class="not-march">7</td>
+              <td class="not-march">8</td>
+              <td class="not-march">9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="body right-subhead">Timeline</p>
+      <div class="row time-task p-2 mx-2 d-flex justify-content-between" id="task-1">
+        <p class="body-m-blk mb-2 py-1">Session 24.3 Final Group Project Due</p>
+        <p class="body-sm-blk mb-1">Monday March 14th, 6:30 PM</p>
+        <img src="images/elipses-black.svg" alt="elipses" class="elipses mr-2 mt-auto mb-auto">
+      </div>
+      <div class="row time-task p-2 mx-2 my-2 d-flex justify-content-between" id="task-2">
+        <p class="body-m mb-2 py-1">Session 24.2 FE Dev Homework Due</p>
+        <p class="body-sm mb-1">Saturday March 18th, 10:00 AM</p>
+        <img src="images/elipses-white.svg" alt="elipses" class="elipses mr-2 mt-auto mb-auto">
+      </div>
+      <div class="row time-task p-2 mx-2 d-flex justify-content-between" id="task-3">
+        <p class="body-m mb-2 py-1">Career Milestone 3: Resume Review Due</p>
+        <p class="body-sm mb-1">Monday March 21st, 6:30 PM</p>
+        <img src="images/elipses-white.svg" alt="elipses" class="elipses mr-2 mt-auto mb-auto">
+      </div>
+      <div class="row reminder-head d-flex mt-5 justify-content-between">
+        <p class="body right-subhead ml-4">Reminders</p>
+        <div class="d-flex all-reminders mb-auto mt-auto pb-0 mr-4">
+          <p class="body-sm pr-3 view-text">View all</p>
+          <img class="view-all" src="images/chev-right.svg" alt="right-pointing chevron">
+        </div>
+      </div>
+      <div class="row reminder-list mx-4 p-3">
+        <div class="row mb-2 d-flex">
+          <label class="container body-m">
+            <input type="checkbox">
+            <span class="checkmark  pr-2"></span>
+            Iterated on Mid-Fi Prototype
+          </label>
+        </div>
+        <div class="row mb-2 d-flex">
+          <label class="container body-m">
+            <input type="checkbox">
+            <span class="checkmark pr-2"></span>
+            Send user testing notes
+          </label>
+        </div>
+        <div class="row mb-2 d-flex">
+          <label class="container body-m">
+            <input type="checkbox">
+            <span class="checkmark pr-2"></span>
+            Submit resume to career services
+          </label>
+        </div>
+        <div class="row mb-2 d-flex">
+          <label class="container body-m">
+            <input type="checkbox" checked="checked">
+            <span class="checkmark  pr-2"></span>
+            Present final presentation
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="/js/index.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
 
-    <!-- Optional JavaScript -->
-    <script src="/js/index.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
 </html>

@@ -1,8 +1,14 @@
 /*Global*/
-.container-fluid {
-    padding: 0 20px;
-    margin-top: 16px;
-    background-color: black;;
+
+.dash-main {
+    padding: 0px;
+    background-color: black;
+}
+
+.page-title {
+    color: white;
+    font: 48px "Helvetica", sans-serif;
+    font-weight: bold;
 }
 
 .body {
@@ -10,30 +16,62 @@
     font: 16px "Helvetica", sans-serif
 }
 
-.body-sm {
+.body-m {
     color: white;
-    font: 12px "Helvetica", sans-serif
+    font: 14px "Helvetica", sans-serif;
+    font-weight: bold;
 }
 
-a {
-    color: white;
-    font: bold 16px "Roboto", sans-serif
+.body-m-blk {
+    font: 14px "Helvetica", sans-serif;
+    font-weight: bold;
 }
+
+.row {
+    border-style: none !important;
+}
+
+.body-sm {
+    color: white;
+    font: 12px "Helvetica", sans-serif;
+    font-weight: 600;
+}
+
+.body-sm-blk {
+    font: 12px "Helvetica", sans-serif;
+    font-weight: 600;
+}
+
+.cal-subhead {
+    color: white;
+    font: 16px "Helvetica", sans-serif;
+    font-weight: bold;
+}
+
+
 
 h1 {
     color: white;
-    font: bold 30px "Roboto", sans-serif
+    font: bold 30px "Helvetica", sans-serif
 }
 
 h2 {
     color: white;
-    font: bold 30px "Roboto", sans-serif
+    font: bold 30px "Helvetica", sans-serif
 }
 
 .icon {
     height: 30px;
-    width: 25%;
-    border: 1px solid black;
+    width: auto;
+}
+
+.icon-sm {
+    height: 15px;
+    width: auto;
+}
+
+.icon-sm:hover {
+    cursor: pointer;
 }
 
 button {
@@ -42,6 +80,7 @@ button {
 }
 
 /*Mobile Nav*/
+
 .mobile-nav {
     padding: 8px 0px;
 }
@@ -62,8 +101,50 @@ button {
 
 /*Left Nav*/
 
+.sidebar-link {
+    color: white;
+    font: bold 12px "Helvetica", sans-serif
+}
+
+.sidebar-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-tool {
+    color: #9D9C9C;
+    font: bold 12px "Helvetica", sans-serif
+}
+
+.sidebar-tool:hover {
+    color: #9D9C9C;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #414343;
+    cursor: pointer;
+}
+
+.current-page {
+    background-color: #4E5052;
+    padding: 0;
+}
+
+.dash-bar {
+    padding: 8px 16px;
+}
+
+.nav-tag {
+    width: 16px;
+    height: 40px;
+    background-color: #0086CF;
+    padding: 0px 12px;
+}
+
 .side-nav {
     background-color: #2E2E2E;
+    min-height: 100%;
 }
 
 .nav-header {
@@ -74,19 +155,69 @@ button {
     border: 1px solid black;
 }
 
+.nav-link:hover {
+    cursor: pointer;
+}
+
 .spacer-nav {
-    height: 38vh;
+    height: 50vh;
+}
+
+.side-icon {
+    height: 24px;
+    width: auto;
 }
 
 /*Center Content*/
 
+.card-title {
+    font: 24px "Hevletica", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.card-title:hover {
+    cursor: pointer;
+}
+
+.card-subtitle {
+    font: 18px "Hevletica", sans-serif;
+    color: white;
+}
+
 .card {
     background-color: #2E2E2E;
-    border-radius: 10px;
+    border-radius: 24px;
+}
+
+.card-arrow {
+    height: 24px;
+}
+
+.card-arrow:hover {
+    cursor: pointer;
 }
 
 .main-content {
     padding: 4px;
+}
+
+.flag {
+    width: 0;
+    height: 0;
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+}
+
+input.flag:before {
+    content: url('../images/flag-open.svg');
+    display: block;
+    transform: scale(0.65);
+}
+
+input[type="checkbox"]:checked:before {
+    content: url('../images/flag-full.svg');
 }
 
 .course-overview {
@@ -99,13 +230,29 @@ button {
     padding: 0px !important;
 }
 
-.class-card {
-    padding: 15px 0px;
-}
-.prog-cards {
+.third-row {
     margin: 0px;
     padding: 0px !important;
 }
+
+.class-card {
+    padding: 15px 0px;
+}
+
+.vid-grn {
+    height: 8px;
+    background-color: #01aa4f;
+}
+
+.vid-blk {
+    height: 8px;
+    background-color: black;
+}
+
+.vid-bar:hover {
+    cursor: pointer;
+}
+
 .progress-card {
     text-align: center;
 }
@@ -114,6 +261,13 @@ button {
     width: 89px;
     background-color: #0086CF;
     border: none;
+}
+ .career-title {
+    margin-bottom: 0 !important;
+ }
+
+.readiness {
+    height: 114px;;
 }
 
 .btn-resources {
@@ -140,6 +294,22 @@ button {
     color: white; 
 } 
 
+.btn-milestones {
+    width: 111px;
+    background-color: #FEAC3C;
+    border: none;
+} 
+
+.btn-assessment {
+    width: 111px;
+    background-color: #FFC811;
+    border: none;
+} 
+
+.session-body{
+    margin-bottom: 0;
+}
+
 .attendance {
     width: 100px;
     padding-bottom: 10px;
@@ -149,6 +319,23 @@ hr {
     border-top: 1px solid #b7b7b7;
 }
 
+.continue-card {
+    padding-top: 0 !important;
+}
+
+.saved-card {
+    padding-top: 0 !important;
+}
+
+.intro-figma {
+    width: 100%;
+    top: 0;
+}
+
+.intro-figma:hover {
+    cursor: pointer;
+}
+
 /*Right Sidebar*/
 
 .right-sidebar {
@@ -156,72 +343,179 @@ hr {
     min-height: 100%
 }
 
-.col-icon {
-    width: 48px;
-}
-
 .icon {
     width: 48px;
 }
 
-.cal-bar {
-    position: relative;
-    border: 1px solid black;
-    justify-content: space-between;
+.icon:hover {
+    cursor: pointer;
 }
 
-.btn-group {
-    right: 0;
-    top: 5px;
+.profile {
+    height: 48px;
+    width: auto;
 }
-
-.calendar {
-    border: 1px solid black;
-    max-height: 279px;
-}
-
-.dot {
-    height: 5px;
-    width: 5px;
-    background-color: green;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
 .table {
     max-width: none;
     table-layout: fixed;
     word-wrap: none;
+    border: none;
+}
+
+.right-subhead {
+    font: 20px "Hevletica", sans-serif;
+    font-weight: 600;
+    color: white;
 }
 
 th {
-    font: 12px 600 "Hevletica", sans-serif;
+    font: 16px 600 "Hevletica", sans-serif;
     color: white;
     text-align: center;
 }
 
-.hide-cal {
+.wkday {
+    font: 16px "Hevletica", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 16px 0 !important
+}
+
+.march {
+    font: 16px "Hevletica", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.not-march {
+    font: 16px "Hevletica", sans-serif;
+    font-weight: bold;
+    color: #b7b7b7;
+    text-align: center;
+}
+
+.this-day {
+    padding-top: 8px !important;
+}
+
+.march-14 {
+    font: 16px "Hevletica", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #0086CF;
+    border-radius: 4px;
+    padding: 4px;
+    text-align: center;
+}
+
+.elipses {
+    height: 5px;
+}
+
+.elipses:hover {
+    cursor: pointer;
+}
+
+.time-task {
+    border-radius: 12px;
+}
+
+#task-1 {
+    background-color: white;
+}
+
+#task-2 {
+    background-color: #626262;
+}
+
+#task-3 {
+    background-color: #434343;
+}
+
+.view-all {
+    height: 16px;
+}
+
+.view-all:hover {
+    height: 16px;
+    cursor: pointer;
+}
+
+.view-text:hover {
+    cursor: pointer;
+    color: #0086CF;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #2e2e2e;
+    border: 2px solid white ;
+    border-radius: 4px;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: rgba(0,134,207,0.5);
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2e2e2e;
+    border: 2px solid #0086CF;
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
     display: none;
 }
-
-td {
-    font: 10px "Hevletica", sans-serif;
-    color: white;
+  
+  /* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid #0086CF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
-.task-item {
-    height: 85px;
-    border: 1px solid black;
-}
 
-.task-item + .task-item {
-    margin-top: 4px;
-}
-
-.event-item {
-    height: 34px;
-    border: 1px solid black;
-}
 /*Media Queries*/
 
 @media (min-width: 769px) {
