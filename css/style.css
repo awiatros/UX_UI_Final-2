@@ -48,8 +48,6 @@
     font-weight: bold;
 }
 
-
-
 h1 {
     color: white;
     font: bold 30px "Helvetica", sans-serif
@@ -83,7 +81,12 @@ button {
 
 .mobile-nav {
     padding: 8px 0px;
+    background-color: #2E2E2E !important;
+    right: 0px !important;
+    width: 100%;
+    margin: 0px;
 }
+
 .nav-subhead {
     border: 1px solid black;
     padding: 8px 0;
@@ -151,16 +154,12 @@ button {
     padding: 0.5rem 1rem;
 }
 
-.nav-link {
-    border: 1px solid black;
-}
-
 .nav-link:hover {
     cursor: pointer;
 }
 
 .spacer-nav {
-    height: 50vh;
+    height: 51vh;
 }
 
 .side-icon {
@@ -518,13 +517,14 @@ th {
 
 /*Media Queries*/
 
-@media (min-width: 769px) {
+@media (min-width: 990px) {
     .mobile-nav {
         display: none;
     }
 }
+
 @media (max-width: 768px) {
-    .right-sidebar, .side-nav {
+    .right-sidebar {
         display: none;
     }
 }
