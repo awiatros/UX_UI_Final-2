@@ -14,6 +14,72 @@
 </head>
 
 <body>
+  <!--Assessment Modal-->
+  <div class="modal fade mx-5" id="skillModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg px-5 py-3" role="document">
+      <div class="modal-content py-2">
+        <div class="modal-header text-center">
+          <h5 class="modal-title cal-subhead w-100 pt-5 ml-4 pl-4">Welcome to Unity 12: UI Interaction Design + Testing</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="images/modal-close.svg" alt="red X in a red circle" class="icon">
+          </button>
+        </div>
+        <div class="modal-body px-4">
+          <p class="body modal-instruction">Interaction (IxD) Design is the first of a series of seven courses that will help you better understand the interaction between users and products. Before we start let’s see where you’re at.</p>
+          <p class="body modal-instruction">Taking this brief self-assessment ensures that you see resources relevant to youthroughout this educational journey. Let’s get started!</p>
+          <p class="pt-1 body-m font-weight-600 pt-3 mt-3">What is your proficiency level with these concepts?</p>
+          <div class="skill-slide text-center mt-1 pt-1">
+            <label class="text-center" for="customRange1">Design Thinking Process</label>
+            <input type="range" class="custom-range" id="customRange1"> 
+          </div>
+          <div class="d-flex justify-content-between px-3">
+            <p class="body-modal">Beginner</p>
+            <p class="body-modal">Developing</p>
+            <p class="body-modal">Proficient</p>
+            <p class="body-modal">Advanced</p>
+            <p class="body-modal">Expert</p>
+          </div>
+          <div class="skill-slide text-center mt-1 pt-1">
+            <label class="text-center" for="customRange1">12 Principles of Animation</label>
+            <input type="range" class="custom-range" id="customRange1"> 
+          </div>
+          <div class="d-flex justify-content-between px-3">
+            <p class="body-modal">Beginner</p>
+            <p class="body-modal">Developing</p>
+            <p class="body-modal">Proficient</p>
+            <p class="body-modal">Advanced</p>
+            <p class="body-modal">Expert</p>
+          </div>
+          <p class="pt-1 body-m font-weight-600 pt-3 mt-3">Please rate your proficiency level with these skills.</p>
+          <div class="skill-slide text-center mt-1 pt-1">
+            <label class="text-center" for="customRange1">Figma Prototyping</label>
+            <input type="range" class="custom-range" id="customRange1"> 
+          </div>
+          <div class="d-flex justify-content-between px-3">
+            <p class="body-modal">Beginner</p>
+            <p class="body-modal">Developing</p>
+            <p class="body-modal">Proficient</p>
+            <p class="body-modal">Advanced</p>
+            <p class="body-modal">Expert</p>
+          </div>
+          <div class="skill-slide text-center mt-1 pt-1">
+            <label class="text-center" for="customRange1">Responsive Web Design (RWD)</label>
+            <input type="range" class="custom-range" id="customRange1"> 
+          </div>
+          <div class="d-flex justify-content-between px-3">
+            <p class="body-modal">Beginner</p>
+            <p class="body-modal">Developing</p>
+            <p class="body-modal">Proficient</p>
+            <p class="body-modal">Advanced</p>
+            <p class="body-modal">Expert</p>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-secondary font-weight-bold skills-submit px-4" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Mobile Nav-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mobile-nav px-4">
     <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -206,7 +272,7 @@
               <p class="body text-center card-title">Skills Assessment</p>
               <p class="body-sm text-center px-3 py-5">Discover suggested resources tailored to you, based on the
                 results of your skills assessment.</p>
-              <button class="btn-assessment resources font-weight-bold mx-auto px-3 mb-2">Manage Assessment</button>
+              <button class="btn-assessment resources font-weight-bold mx-auto px-3 mb-2" data-toggle="modal" data-target="#skillModal">Manage Assessment</button>
             </div>
           </div>
         </div>

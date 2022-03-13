@@ -77,6 +77,76 @@ button {
     font-size: 12px;
 }
 
+/*Modal*/
+.modal-lg {
+    max-width: 60%
+}
+.modal-header {
+    border-bottom: none;
+    text-align: center !important;
+}
+
+.modal-content {
+   background-color: #2E2E2E;
+   border-radius: 16px;
+}
+
+.body-modal {
+    color: white;
+    font: 14px "Helvetica", sans-serif
+}
+
+.modal-instruction {
+    text-align: center;
+}
+
+.skill-slide label {
+    color: #FEAC3C;
+    text-align: center;
+}
+.modal-footer {
+    border-top: none;
+}
+
+.skills-submit {
+    background-color: white;
+    color: black;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #01aa4f;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+.skills-submit:hover {
+    background-color: #0086CF;
+}
+
 /*Mobile Nav*/
 
 .mobile-nav {
@@ -212,7 +282,7 @@ button {
 input.flag:before {
     content: url('../images/flag-open.svg');
     display: block;
-    transform: scale(0.65);
+    transform: scale(0.35, 0.47);
 }
 
 input[type="checkbox"]:checked:before {
@@ -483,25 +553,21 @@ th {
     background-color: rgba(0,134,207,0.5);
 }
   
-  /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
     background-color: #2e2e2e;
     border: 2px solid #0086CF;
 }
   
-  /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
   
-  /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
     display: block;
 }
   
-  /* Style the checkmark/indicator */
 .container .checkmark:after {
     left: 6px;
     top: 2px;
@@ -513,7 +579,6 @@ th {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
 
 /*Media Queries*/
 
@@ -528,3 +593,4 @@ th {
         display: none;
     }
 }
+
